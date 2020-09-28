@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'django_summernote'
+    'django_summernote',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,5 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
