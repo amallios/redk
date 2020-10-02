@@ -6,9 +6,14 @@ from .forms import CommentForm
 # Create your views here.
 
 
+def landing(request):
+    template_name = 'landing.html'
+    return render(request, template_name)
+
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
+    template_name = 'blog/index.html'
 
 
 def post_detail(request, slug):

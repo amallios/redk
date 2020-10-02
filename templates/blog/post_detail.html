@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %} {% load crispy_forms_tags %}
+{% extends 'homepage/base.html' %} {% block content %} {% load crispy_forms_tags %}
 
     <div class="container">
         <div class="row">
@@ -9,7 +9,7 @@
                     <p class="card-text ">{{ post.content | safe }}</p>
                 </div>
             </div>
-            {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+            {% block sidebar %} {% include 'homepage/sidebar.html' %} {% endblock sidebar %}
             <div class="col-md-8 card mb-4  mt-3 ">
                 <div class="card-body">
                     <!-- comments -->
